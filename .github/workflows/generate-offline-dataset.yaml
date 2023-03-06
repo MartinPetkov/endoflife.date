@@ -26,6 +26,7 @@ jobs:
     - uses: ncipollo/release-action@v1
       with:
         name: "latest"
+        tag: "latest-offline-dataset"
         artifacts: "dataset.tar.gz"
         allowUpdates: true
         artifactErrorsFailBuild: true
