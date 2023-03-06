@@ -30,4 +30,3 @@ jobs:
         allowUpdates: true
         artifactErrorsFailBuild: true
         makeLatest: true
-        allowUpdates: true
