@@ -1,6 +1,7 @@
 ---
 title: Apache ZooKeeper
 category: server-app
+tags: apache java-runtime
 permalink: /zookeeper
 alternate_urls:
 -   /apache_zookeeper
@@ -20,20 +21,29 @@ identifiers:
 auto:
 -   maven: org.apache.zookeeper/zookeeper
 
+# support(X) = releaseDate(X+2)
+# eol(X) ~= releaseDate(X+2)+6m, unless declared
 releases:
+-   releaseCycle: "3.9"
+    eol: false
+    support: true
+    latest: "3.9.1"
+    releaseDate: 2023-07-19
+    latestReleaseDate: 2023-10-02
+
 -   releaseCycle: "3.8"
     eol: false
     support: true
-    latest: "3.8.1"
+    latest: "3.8.3"
     releaseDate: 2022-02-25
-    latestReleaseDate: 2023-01-25
+    latestReleaseDate: 2023-10-05
 
 -   releaseCycle: "3.7"
-    eol: false
-    support: true
-    latest: "3.7.1"
+    eol: 2024-01-19
+    support: 2023-07-19
+    latest: "3.7.2"
     releaseDate: 2021-03-17
-    latestReleaseDate: 2022-05-07
+    latestReleaseDate: 2023-10-06
 
 -   releaseCycle: "3.6"
     eol: 2022-12-30

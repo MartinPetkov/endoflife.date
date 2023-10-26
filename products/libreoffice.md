@@ -10,17 +10,23 @@ releaseDateColumn: true
 eolColumn: Support Status
 
 releases:
+-   releaseCycle: "7.6"
+    releaseDate: 2023-08-21
+    eol: 2024-06-12
+    latest: "7.6.2"
+    latestReleaseDate: 2023-09-26
+    
 -   releaseCycle: "7.5"
     releaseDate: 2023-02-02
     eol: 2023-11-30
-    latest: "7.5.1"
-    latestReleaseDate: 2023-03-02
+    latest: "7.5.7"
+    latestReleaseDate: 2023-09-26
 
 -   releaseCycle: "7.4"
     releaseDate: 2022-08-18
     eol: 2023-06-12
-    latest: "7.4.5"
-    latestReleaseDate: 2023-01-26
+    latest: "7.4.7"
+    latestReleaseDate: 2023-05-11
 
 -   releaseCycle: "7.3"
     eol: 2022-11-30

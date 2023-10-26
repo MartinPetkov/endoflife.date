@@ -1,6 +1,7 @@
 ---
 title: VMware Site Recovery Manager
 category: server-app
+tags: vmware
 iconSlug: vmware
 permalink: /vmware-srm
 alternate_urls:
@@ -127,5 +128,5 @@ support, server/client/guest OS updates, new security patches or bug fixes unles
 {% include table.html
 labels="Release,Technical Guidance Ends"
 fields="releaseCycle,technicalGuidance"
-types="string,date"
+types="raw,end-date"
 rows=page.releases %}

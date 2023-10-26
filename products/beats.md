@@ -1,6 +1,7 @@
 ---
 title: Elastic Beats
 category: server-app
+tags: elastic
 iconSlug: beats
 permalink: /beats
 alternate_urls:
@@ -14,32 +15,30 @@ alternate_urls:
 -   /functionbeat
 releasePolicyLink: https://www.elastic.co/support_policy
 changelogTemplate: "https://www.elastic.co/guide/en/beats/libbeat/{{'__LATEST__'|split:'.'|pop|join:'.'}}/release-notes-__LATEST__.html"
-eolColumn: Support
 releaseDateColumn: true
+eolColumn: Support
 
 auto:
 -   git: https://github.com/elastic/beats.git
 
 releases:
 -   releaseCycle: "8"
-    # the longest between this date and 6 months after the 9.0.0
-    eol: 2023-10-26
-    latest: "8.6.2"
-    latestReleaseDate: 2023-02-16
     releaseDate: 2022-02-10
+    eol: 2024-08-10 # later of 2024-08-10 or 6 months after the release date of 9.0
+    latest: "8.10.4"
+    latestReleaseDate: 2023-10-17
 
 -   releaseCycle: "7"
-    # Maintained until 9.0.0
-    eol: 2023-08-01
-    latest: "7.17.9"
-    latestReleaseDate: 2023-02-02
     releaseDate: 2019-04-05
+    eol: false # later of 2023-08-01 or the release date of 9.0
+    latest: "7.17.14"
+    latestReleaseDate: 2023-10-10
 
 -   releaseCycle: "6"
+    releaseDate: 2017-11-08
     eol: 2022-02-10
     latest: "6.8.23"
     latestReleaseDate: 2022-01-13
-    releaseDate: 2017-11-08
 
 ---
 

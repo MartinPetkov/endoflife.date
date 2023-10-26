@@ -1,10 +1,11 @@
 ---
 title: Electron
 category: framework
+tags: javascript-runtime
 iconSlug: electron
 permalink: /electron
 versionCommand: npm show electron version
-releasePolicyLink: https://www.electronjs.org/docs/latest/tutorial/support
+releasePolicyLink: https://www.electronjs.org/docs/latest/tutorial/electron-timelines
 changelogTemplate: "https://www.electronjs.org/releases/stable?version={{'__LATEST__'|split:'.'|first}}#__LATEST__"
 eolColumn: Supported
 activeSupportColumn: false
@@ -15,126 +16,163 @@ releaseDateColumn: true
 auto:
 -   npm: electron
 
-# The EOL dates will need to be corrected once a new release comes out.
-# v24 (releaseDate) = v21 (eol)
-# v25 (releaseDate) = v22 (eol)
-# v26 (releaseDate) = v23 (eol)
-# and so on...
+# EOL dates documented on https://www.electronjs.org/docs/latest/tutorial/electron-timelines.
 releases:
+-   releaseCycle: "27"
+    releaseDate: 2023-10-10
+    eol: false # TBD on https://www.electronjs.org/docs/latest/tutorial/electron-timelines
+    latest: "27.0.2"
+    latestReleaseDate: 2023-10-20
+
+-   releaseCycle: "26"
+    releaseDate: 2023-08-14
+    eol: 2024-02-27
+    latest: "26.4.1"
+    latestReleaseDate: 2023-10-19
+
+-   releaseCycle: "25"
+    releaseDate: 2023-05-29
+    eol: 2024-01-02
+    latestReleaseDate: 2023-10-18
+    latest: "25.9.2"
+
+-   releaseCycle: "24"
+    releaseDate: 2023-04-04
+    eol: 2023-10-10
+    latest: "24.8.8"
+    latestReleaseDate: 2023-10-11
+
 -   releaseCycle: "23"
-    # 2023-02-06 + 6 months
-    eol: 2023-08-06
     releaseDate: 2023-02-07
-    latestReleaseDate: 2023-02-22
-    latest: "23.1.1"
+    eol: 2023-08-15
+    latest: "23.3.13"
+    latestReleaseDate: 2023-08-16
 
 -   releaseCycle: "22"
-    eol: 2023-07-07
     releaseDate: 2022-11-30
-    latestReleaseDate: 2023-02-22
-    latest: "22.3.1"
+    eol: 2023-10-10
+    latest: "22.3.27"
+    latestReleaseDate: 2023-10-09
 
 -   releaseCycle: "21"
-    eol: 2023-04-05
     releaseDate: 2022-09-26
-    latestReleaseDate: 2023-02-23
-    latest: "21.4.2"
+    eol: 2023-04-04
+    latest: "21.4.4"
+    latestReleaseDate: 2023-04-04
 
 -   releaseCycle: "20"
+    releaseDate: 2022-08-01
     eol: 2023-02-06
     latest: "20.3.12"
     latestReleaseDate: 2023-02-09
-    releaseDate: 2022-08-01
 
 -   releaseCycle: "19"
+    releaseDate: 2022-05-23
     eol: 2022-11-30
     latest: "19.1.9"
     latestReleaseDate: 2022-11-30
-    releaseDate: 2022-05-23
 
 -   releaseCycle: "18"
+    releaseDate: 2022-03-29
     eol: 2022-09-27
     latest: "18.3.15"
     latestReleaseDate: 2022-09-27
-    releaseDate: 2022-03-29
 
 -   releaseCycle: "17"
-    eol: true
+    releaseDate: 2022-02-01
+    eol: 2022-08-02
     latest: "17.4.11"
     latestReleaseDate: 2022-08-01
-    releaseDate: 2022-02-01
 
 -   releaseCycle: "16"
+    releaseDate: 2021-11-16
     eol: 2022-05-24
     latest: "16.2.8"
     latestReleaseDate: 2022-05-24
-    releaseDate: 2021-11-16
 
 -   releaseCycle: "15"
+    releaseDate: 2021-09-21
     eol: 2022-05-24
     latest: "15.5.7"
     latestReleaseDate: 2022-05-24
-    releaseDate: 2021-09-21
 
 -   releaseCycle: "14"
-    eol: true
+    releaseDate: 2021-08-30
+    eol: 2022-03-29
     latest: "14.2.9"
     latestReleaseDate: 2022-03-30
-    releaseDate: 2021-08-30
 
 -   releaseCycle: "13"
-    eol: true
+    releaseDate: 2021-05-25
+    eol: 2022-02-01
     latest: "13.6.9"
     latestReleaseDate: 2022-02-01
-    releaseDate: 2021-05-25
 
 -   releaseCycle: "12"
-    eol: true
+    releaseDate: 2021-03-02
+    eol: 2021-11-16
     latest: "12.2.3"
     latestReleaseDate: 2021-11-15
-    releaseDate: 2021-03-02
 
 -   releaseCycle: "11"
-    eol: true
+    releaseDate: 2020-11-16
+    eol: 2021-08-31
     latest: "11.5.0"
     latestReleaseDate: 2021-08-31
-    releaseDate: 2020-11-16
 
 -   releaseCycle: "10"
-    eol: true
+    releaseDate: 2020-08-24
+    eol: 2021-05-25
     latest: "10.4.7"
     latestReleaseDate: 2021-05-24
-    releaseDate: 2020-08-24
 
 -   releaseCycle: "9"
-    eol: true
+    releaseDate: 2020-05-19
+    eol: 2021-03-02
     latest: "9.4.4"
     latestReleaseDate: 2021-03-03
-    releaseDate: 2020-05-19
 
 -   releaseCycle: "8"
-    eol: true
+    releaseDate: 2020-02-03
+    eol: 2020-11-17
     latest: "8.5.5"
     latestReleaseDate: 2020-11-18
-    releaseDate: 2020-02-03
 
 -   releaseCycle: "7"
-    eol: true
+    releaseDate: 2019-10-21
+    eol: 2020-08-25
     latest: "7.3.3"
     latestReleaseDate: 2020-08-25
-    releaseDate: 2019-10-21
 
 -   releaseCycle: "6"
-    eol: true
+    releaseDate: 2019-07-29
+    eol: 2020-05-19
     latest: "6.1.12"
     latestReleaseDate: 2020-05-18
-    releaseDate: 2019-07-29
 
 -   releaseCycle: "5"
-    eol: true
+    releaseDate: 2019-04-24
+    eol: 2020-02-04
     latest: "5.0.13"
     latestReleaseDate: 2019-12-17
-    releaseDate: 2019-04-24
+
+-   releaseCycle: "4"
+    releaseDate: 2018-12-20
+    eol: 2019-10-22
+    latest: "4.2.12"
+    latestReleaseDate: 2019-10-16
+
+-   releaseCycle: "3"
+    releaseDate: 2018-09-18
+    eol: 2019-07-30
+    latest: "3.1.13"
+    latestReleaseDate: 2019-07-31
+
+-   releaseCycle: "2"
+    releaseDate: 2018-05-01
+    eol: 2019-04-23
+    latest: "2.0.18"
+    latestReleaseDate: 2019-03-08
 
 ---
 
@@ -143,9 +181,15 @@ releases:
 > to maintain one JavaScript codebase and create cross-platform apps that work on Windows, macOS,
 > and Linux.
 
-The latest [_three_ stable major versions are currently supported](https://www.electronjs.org/blog/8-week-cadence).
+Typically, the latest [_three_ stable major versions are currently supported](https://www.electronjs.org/blog/8-week-cadence).
 Only the latest minor release in each major version is supported. A new major stable version is
 released every 8 weeks.
+
+ℹ️ Electron 22 is temporarily supported until October 10, 2023. This extended
+support is intended to help developers who still need support for Windows 7/8/8.1, which
+ended support in Electron 23. The October support date follows the extended support dates from
+both Chromium and Microsoft. On October 11, support will drop back to the
+latest three stable major versions.
 
 All supported release get fixes backported that were previously merged to main, though this may be
 on a case-by-case basis for some older supported releases. When an API is changed or removed in a

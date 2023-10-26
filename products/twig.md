@@ -2,6 +2,7 @@
 title: Twig
 permalink: /twig
 category: framework
+tags: php-runtime
 activeSupportColumn: false
 releaseDateColumn: true
 releaseColumn: true
@@ -11,16 +12,16 @@ auto:
 releases:
 -   releaseCycle: "3"
     eol: false
-    latest: "3.5.1"
+    latest: "3.7.1"
     releaseDate: 2019-11-15
-    latestReleaseDate: 2023-02-08
+    latestReleaseDate: 2023-08-28
 -   releaseCycle: "2"
-    eol: false
-    latest: "2.15.4"
+    eol: 2023-12-31 # https://symfony.com/blog/twig-2-end-of-life
+    latest: "2.15.5"
     releaseDate: 2017-01-05
-    latestReleaseDate: 2022-12-27
+    latestReleaseDate: 2023-05-03
 -   releaseCycle: "1"
-    eol: false
+    eol: 2022-09-28
     latest: "1.44.7"
     releaseDate: 2011-03-27
     latestReleaseDate: 2022-09-28

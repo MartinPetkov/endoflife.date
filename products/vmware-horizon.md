@@ -1,6 +1,7 @@
 ---
 title: VMware Horizon
 category: app
+tags: vmware
 iconSlug: vmware
 permalink: /horizon
 alternate_urls:
@@ -15,20 +16,34 @@ releaseColumn: true
 releaseDateColumn: true
 
 releases:
+-   releaseCycle: "8.2306"
+    releaseDate: 2023-07-06
+    eol: 2026-07-06
+    technicalGuidance: 2027-07-06
+    latest: "8.2306"
+    latestReleaseDate: 2023-07-06
+
+-   releaseCycle: "8.2303"
+    releaseDate: 2023-03-30
+    eol: 2026-03-30
+    technicalGuidance: 2027-03-30
+    latest: "8.2303"
+    latestReleaseDate: 2023-03-30
+
 -   releaseCycle: "8.2212"
     releaseDate: 2023-01-12
     eol: 2026-01-12
     technicalGuidance: 2027-01-12
     lts: true
-    latest: "8.2212"
-    latestReleaseDate: 2023-01-12
+    latest: "8.2212.1"
+    latestReleaseDate: 2023-08-03
 
 -   releaseCycle: "8.2209"
     releaseDate: 2022-10-20
     eol: 2025-10-20
     technicalGuidance: 2026-10-20
-    latest: "8.2209"
-    latestReleaseDate: 2022-10-20
+    latest: "8.2209.1"
+    latestReleaseDate: 2023-04-11
 
 -   releaseCycle: "8.2206"
     releaseDate: 2022-07-19
@@ -49,8 +64,8 @@ releases:
     eol: 2024-11-30
     technicalGuidance: 2025-11-30
     lts: true
-    latest: "8.2111.1"
-    latestReleaseDate: 2022-11-08
+    latest: "8.2111.2"
+    latestReleaseDate: 2023-07-27
 
 -   releaseCycle: "8.2106"
     releaseDate: 2021-07-15
@@ -82,7 +97,7 @@ releases:
     technicalGuidance: 2027-08-11
     latest: "8.2006"
     latestReleaseDate: 2020-08-11
-    link: https://docs.vmware.com/en/VMware-Horizon/2006/rn/horizon-2006-release-notes.html
+    link: https://docs.vmware.com/en/VMware-Horizon/8-2006/rn/vmware-horizon-8-2006-release-notes/index.html
 
 -   releaseCycle: "7"
     releaseLabel: "7.X NonLTS branch"
@@ -133,5 +148,5 @@ support, server/client/guest OS updates, new security patches or bug fixes unles
 {% include table.html
    labels="Release,Technical Guidance Ends"
    fields="releaseCycle,technicalGuidance"
-   types="string,date"
+   types="raw,end-date"
    rows=page.releases %}

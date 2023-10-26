@@ -3,7 +3,8 @@ title: Tarantool
 category: db
 permalink: /tarantool
 versionCommand: $ tarantool --version
-releaseImage: https://hb.bizmrg.com/tarantool-io/doc-builds/tarantool/latest/images_en/releases_calendar.svg
+releaseImage: 
+  https://hb.bizmrg.com/tarantool-io/doc-builds/tarantool/latest/images_en/releases_calendar.svg
 releasePolicyLink: https://www.tarantool.io/en/doc/latest/release/policy/
 changelogTemplate: https://github.com/tarantool/tarantool/releases/tag/__LATEST__
 eolColumn: Support Status
@@ -13,10 +14,17 @@ auto:
 -   git: https://github.com/tarantool/tarantool.git
 
 releases:
+-   releaseCycle: "2.11"
+    lts: true
+    eol: 2027-05-24
+    latest: "2.11.1"
+    latestReleaseDate: 2023-08-21
+    releaseDate: 2023-05-24
+
 -   releaseCycle: "2.10"
-    eol: false
-    latest: "2.10.5"
-    latestReleaseDate: 2023-02-20
+    eol: 2023-05-24
+    latest: "2.10.8"
+    latestReleaseDate: 2023-09-14
     releaseDate: 2022-05-22
 
 -   releaseCycle: "2.8"
@@ -62,7 +70,7 @@ releases:
     releaseDate: 2019-03-22
 
 -   releaseCycle: "1.10"
-    eol: false
+    eol: 2023-05-24
     lts: true
     latest: "1.10.15"
     latestReleaseDate: 2023-02-20
@@ -91,3 +99,5 @@ Here are the most significant changes from the legacy release policy:
   suffixes, like `3.0.0-alpha1`.
 - In the legacy release policy, `1.10` was a long-term support (LTS) series, while `2.x.y` had
   stable releases, but wasn’t an LTS series. Now both series are long-term supported.
+
+[2.11](https://www.tarantool.io/en/doc/latest/release/2.11.0/) is the long-term support (LTS) release with four years of maintenance.

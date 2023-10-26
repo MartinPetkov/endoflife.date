@@ -1,6 +1,7 @@
 ---
 title: Jenkins
 category: server-app
+tags: java-runtime
 iconSlug: jenkins
 permalink: /jenkins
 releasePolicyLink: https://www.jenkins.io/download/lts/
@@ -13,43 +14,64 @@ auto:
 -   git: https://github.com/jenkinsci/jenkins.git
     regex: '^jenkins-(?<major>[0-9]+)\.(?<minor>[0-9]+)(\.(?<patch>[0-9]+))?$'
 
-# releaseCycle 2 catches weekly releases, other are LTS.
-# For an LTS :
-# - Its support date is its release date, meaning there will never be backport of features.
-# - Its EOL date is the releaseDate of the next LTS version, meaning the release date of the first
-#   patch version of the minor version choosed to be the next LTS (e.g. 2.361.1).
+# releaseCycle 2 catches weekly releases, other releases are LTS.
+#
+# LTS releases start at patch version .1 ('x.y.1') and, when a new LTS is released, it replaces the
+# previous one. So, for an x.y LTS releases :
+# - lts(x.y) = releaseDate(x.y.1)
+# - releaseDate(x.y) = releaseDate(x.y.0)
+# - eol(x.y) = releaseDate(next LTS)
+#
+# See https://github.com/endoflife-date/endoflife.date/pull/2695#issuecomment-1472929098
 releases:
 -   releaseCycle: "2"
     releaseLabel: "Regular"
-    support: true
-    eol: false
-    latest: "2.393"
-    latestReleaseDate: 2023-02-28
     releaseDate: 2016-04-20
+    eol: false
+    latest: "2.429"
+    latestReleaseDate: 2023-10-24
+
+-   releaseCycle: "2.414"
+    lts: 2023-08-23
+    releaseDate: 2023-07-11
+    eol: false
+    latest: "2.414.3"
+    latestReleaseDate: 2023-10-18
+
+-   releaseCycle: "2.401"
+    lts: 2023-05-31
+    releaseDate: 2023-04-18
+    eol: 2023-08-23
+    latest: "2.401.3"
+    latestReleaseDate: 2023-07-24
+
+-   releaseCycle: "2.387"
+    lts: 2023-03-08
+    releaseDate: 2023-01-17
+    eol: 2023-05-31
+    latest: "2.387.3"
+    latestReleaseDate: 2023-05-03
 
 -   releaseCycle: "2.375"
-    lts: true
-    support: 2022-10-25
-    eol: false
-    latest: "2.375.3"
-    latestReleaseDate: 2023-02-08
+    lts: 2022-11-30
     releaseDate: 2022-10-25
+    eol: 2023-03-08
+    latest: "2.375.4"
+    latestReleaseDate: 2023-03-06
 
 -   releaseCycle: "2.361"
-    lts: true
-    support: 2022-07-26
+    lts: 2022-09-07
+    releaseDate: 2022-07-26
     eol: 2022-11-30
     latest: "2.361.4"
     latestReleaseDate: 2022-11-14
-    releaseDate: 2022-07-26
 
 -   releaseCycle: "2.346"
-    lts: true
-    support: 2022-05-03
+    lts: 2022-06-22
+    releaseDate: 2022-05-03
     eol: 2022-09-07
     latest: "2.346.3"
     latestReleaseDate: 2022-08-10
-    releaseDate: 2022-05-03
 
 ---
 

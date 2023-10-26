@@ -1,6 +1,7 @@
 ---
 title: Wagtail
 category: framework
+tags: python-runtime
 iconSlug: wagtail
 permalink: /wagtail
 versionCommand: python -c "import wagtail; print(wagtail.__version__)"
@@ -16,26 +17,39 @@ identifiers:
 -   repology: python:wagtail
 -   purl: pkg:pypi/wagtail
 
+# See https://github.com/wagtail/wagtail/wiki/Release-schedule for releaseDate / support / EOL dates.
 releases:
+-   releaseCycle: "5.1"
+    releaseDate: 2023-08-01
+    support: 2023-11-01
+    eol: 2024-02-01
+    latest: "5.1.3"
+    latestReleaseDate: 2023-10-19
+
+-   releaseCycle: "5.0"
+    releaseDate: 2023-05-02
+    support: 2023-08-01
+    eol: 2023-11-01
+    latest: "5.0.5"
+    latestReleaseDate: 2023-10-19
+
 -   releaseCycle: "4.2"
     support: 2023-05-02
-    lts: false
     eol: 2023-08-01
-    latest: "4.2"
-    latestReleaseDate: 2023-02-06
+    latest: "4.2.4"
+    latestReleaseDate: 2023-05-25
     releaseDate: 2023-02-06
 
 -   releaseCycle: "4.1"
     support: 2024-02-01
     lts: true
     eol: 2024-02-01
-    latest: "4.1.2"
-    latestReleaseDate: 2023-02-06
+    latest: "4.1.9"
+    latestReleaseDate: 2023-10-19
     releaseDate: 2022-11-01
 
 -   releaseCycle: "4.0"
     support: 2022-11-01
-    lts: false
     eol: 2023-02-01
     latest: "4.0.4"
     latestReleaseDate: 2022-10-18
@@ -43,7 +57,6 @@ releases:
 
 -   releaseCycle: "3.0"
     support: 2022-08-31
-    lts: false
     eol: 2022-11-01
     latest: "3.0.3"
     latestReleaseDate: 2022-09-05
@@ -51,7 +64,6 @@ releases:
 
 -   releaseCycle: "2.16"
     support: 2022-05-01
-    lts: false
     eol: 2022-05-16
     latest: "2.16.3"
     latestReleaseDate: 2022-09-05
@@ -60,7 +72,7 @@ releases:
 -   releaseCycle: "2.15"
     support: 2023-02-01
     lts: true
-    eol: false
+    eol: 2023-02-01
     latest: "2.15.6"
     latestReleaseDate: 2022-09-05
     releaseDate: 2021-11-04
@@ -68,7 +80,6 @@ releases:
 -   releaseCycle: "2.14"
     eol: 2022-02-07
     support: 2021-11-04
-    lts: false
     latest: "2.14.2"
     latestReleaseDate: 2021-10-14
     releaseDate: 2021-08-02
@@ -76,7 +87,6 @@ releases:
 -   releaseCycle: "2.13"
     eol: 2022-02-01
     support: 2021-08-01
-    lts: false
     latest: "2.13.5"
     latestReleaseDate: 2021-10-14
     releaseDate: 2021-05-12
@@ -84,8 +94,7 @@ releases:
 -   releaseCycle: "2.12"
     eol: 2021-08-01
     support: 2021-05-12
-    lts: false
-    latest: "2.12.6"
+    latest: "2.12.7"
     latestReleaseDate: 2021-07-13
     releaseDate: 2021-02-02
 
@@ -100,7 +109,6 @@ releases:
 -   releaseCycle: "2.10"
     eol: 2021-02-02
     support: 2020-11-02
-    lts: false
     latest: "2.10.2"
     latestReleaseDate: 2020-09-25
     releaseDate: 2020-08-11
@@ -108,7 +116,6 @@ releases:
 -   releaseCycle: "2.9"
     eol: 2020-11-02
     support: 2020-08-11
-    lts: false
     latest: "2.9.3"
     latestReleaseDate: 2020-07-20
     releaseDate: 2020-05-04
@@ -116,7 +123,6 @@ releases:
 -   releaseCycle: "2.8"
     eol: 2020-08-11
     support: 2020-05-04
-    lts: false
     latest: "2.8.2"
     latestReleaseDate: 2020-05-04
     releaseDate: 2020-02-03
@@ -151,6 +157,7 @@ The Wagtail team provides [official security support](https://docs.wagtail.org/e
 
 Wagtail release | Compatible Django versions | Compatible Python versions
 ----------------|----------------------------|----------------------------
+5               | 3.2, 4.1, 4.2              | 3.8-3.11
 4               | 3.2, 4.0, 4.1              | 3.7-3.11
 3               | 3.2, 4.0                   | 3.7-3.10
 2.15 LTS        | 3.0, 3.1, 3.2              | 3.6-3.10

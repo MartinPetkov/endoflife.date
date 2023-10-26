@@ -1,6 +1,7 @@
 ---
 title: Microsoft SQL Server
 category: db
+tags: microsoft
 iconSlug: microsoftsqlserver
 permalink: /mssqlserver
 alternate_urls:
@@ -17,25 +18,25 @@ extendedSupportColumn: Extended Security Updates
 releases:
 -   releaseCycle: "2022"
     codename: Dallas
-    releaseLabel: "2022 CU1"
+    releaseLabel: "2022 CU9"
     releaseDate: 2022-11-16
     support: 2028-01-11
     eol: 2033-01-11
     extendedSupport: false
-    latest: "16.0.4003.1"
-    latestReleaseDate: 2023-02-16
-    link: https://support.microsoft.com/help/5022375
+    latest: "16.0.4085.2"
+    latestReleaseDate: 2023-10-12
+    link: https://learn.microsoft.com/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate9
 
 -   releaseCycle: "2019"
     codename: Seattle
-    releaseLabel: "2019 CU19"
+    releaseLabel: "2019 CU23"
     releaseDate: 2019-11-04
     support: 2025-01-07
     eol: 2030-01-08
     extendedSupport: false
-    latest: "15.0.4298.1"
-    latestReleaseDate: 2023-02-16
-    link: https://support.microsoft.com/help/5023049
+    latest: "15.0.4335.1"
+    latestReleaseDate: 2023-10-12
+    link: https://learn.microsoft.com/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate23
 
 -   releaseCycle: "2017"
     codename: Helsinki
@@ -44,9 +45,9 @@ releases:
     support: 2022-10-11
     eol: 2027-10-12
     extendedSupport: false
-    latest: "14.0.3460.9"
-    latestReleaseDate: 2023-02-14
-    link: https://support.microsoft.com/help/5021126
+    latest: "14.0.3465.1"
+    latestReleaseDate: 2023-10-10
+    link: https://support.microsoft.com/help/5029376
 
 -   releaseCycle: "2016"
     codename: SQL16
@@ -55,9 +56,9 @@ releases:
     support: 2021-07-13
     eol: 2026-07-14
     extendedSupport: false
-    latest: "13.0.6430.49"
-    latestReleaseDate: 2023-02-14
-    link: https://support.microsoft.com/help/5021129
+    latest: "13.0.6435.1"
+    latestReleaseDate: 2023-10-10
+    link: https://support.microsoft.com/help/5029186
 
 -   releaseCycle: "2014"
     codename: Hekaton
@@ -66,9 +67,9 @@ releases:
     support: 2019-07-09
     eol: 2024-07-09
     extendedSupport: false
-    latest: "12.0.6444.4"
-    latestReleaseDate: 2023-02-14
-    link: https://support.microsoft.com/help/5021045
+    latest: "12.0.6449.1"
+    latestReleaseDate: 2023-10-10
+    link: https://support.microsoft.com/help/5029185
 
 -   releaseCycle: "2012"
     codename: Denali
@@ -77,9 +78,9 @@ releases:
     support: 2017-07-11
     eol: 2022-07-12
     extendedSupport: 2025-07-08
-    latest: "11.0.7507.2"
-    latestReleaseDate: 2021-01-12
-    link: https://support.microsoft.com/help/4583465
+    latest: "11.0.7512.11"
+    latestReleaseDate: 2023-02-14
+    link: https://support.microsoft.com/help/5021123
 
 -   releaseCycle: "2008 R2"
     codename: Kilimanjaro
@@ -88,9 +89,9 @@ releases:
     support: 2014-07-08
     eol: 2019-07-09
     extendedSupport: 2022-07-12
-    latest: "10.50.6560.0"
-    latestReleaseDate: 2018-01-06
-    link: https://support.microsoft.com/help/4057113
+    latest: "10.50.6785.2"
+    latestReleaseDate: 2023-02-14
+    link: https://support.microsoft.com/help/5021112
 
 -   releaseCycle: "2008"
     codename: Katmai
@@ -99,9 +100,9 @@ releases:
     support: 2014-07-08
     eol: 2019-07-09
     extendedSupport: 2022-07-12
-    latest: "10.0.6556.0"
-    latestReleaseDate: 2018-01-06
-    link: https://support.microsoft.com/help/4057114
+    latest: "10.0.6814.4"
+    latestReleaseDate: 2023-02-14
+    link: https://support.microsoft.com/help/5020863
 
 -   releaseCycle: "2005"
     codename: Yukon
@@ -134,7 +135,6 @@ releases:
     extendedSupport: false
     latest: "7.0.1152"
     latestReleaseDate: 2012-05-09
-    # Original KB941203 but 404 in the meantime: https://support.microsoft.com/help/948113
     link: https://support.microsoft.com/help/941203
 
 -   releaseCycle: "6.5"

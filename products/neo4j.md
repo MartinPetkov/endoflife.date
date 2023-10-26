@@ -1,10 +1,11 @@
 ---
 title: Neo4j
 category: db
+tags: java-runtime
 iconSlug: neo4j
 permalink: /neo4j
-versionCommand: "call dbms.components() yield versions unwind versions as version\
-  \ return version;"
+versionCommand: "call dbms.components() yield versions unwind versions as version
+  return version;"
 releasePolicyLink: https://neo4j.com/terms/support-terms/
 changelogTemplate: https://github.com/neo4j/neo4j/releases/tag/__LATEST__
 activeSupportColumn: false
@@ -15,12 +16,61 @@ auto:
 -   git: https://github.com/neo4j/neo4j.git
 
 # eol(x) = releaseDate(x+1)
+# See https://support.neo4j.com/hc/en-us/articles/115013134648-Neo4j-Supported-Versions.
 releases:
--   releaseCycle: "5.5"
+-   releaseCycle: "5.13"
+    releaseDate: 2023-10-23
     eol: false
+    latest: "5.13.0"
+    latestReleaseDate: 2023-10-23
+
+-   releaseCycle: "5.12"
+    releaseDate: 2023-09-14
+    eol: 2023-10-23
+    latest: "5.12.0"
+    latestReleaseDate: 2023-09-14
+
+-   releaseCycle: "5.11"
+    releaseDate: 2023-08-15
+    eol: 2023-09-14
+    latest: "5.11.0"
+    latestReleaseDate: 2023-08-15
+
+-   releaseCycle: "5.10"
+    releaseDate: 2023-07-19
+    eol: 2023-08-15
+    latest: "5.10.0"
+    latestReleaseDate: 2023-07-19
+
+-   releaseCycle: "5.9"
+    releaseDate: 2023-06-14
+    eol: 2023-07-19
+    latest: "5.9.0"
+    latestReleaseDate: 2023-06-14
+
+-   releaseCycle: "5.8"
+    releaseDate: 2023-05-16
+    eol: 2023-06-15
+    latest: "5.8.0"
+    latestReleaseDate: 2023-05-16
+
+-   releaseCycle: "5.7"
+    releaseDate: 2023-04-20
+    eol: 2023-05-16
+    latest: "5.7.0"
+    latestReleaseDate: 2023-04-20
+
+-   releaseCycle: "5.6"
+    releaseDate: 2023-03-24
+    eol: 2023-04-20
+    latest: "5.6.0"
+    latestReleaseDate: 2023-03-24
+
+-   releaseCycle: "5.5"
+    releaseDate: 2023-02-16
+    eol: 2023-03-24
     latest: "5.5.0"
     latestReleaseDate: 2023-02-16
-    releaseDate: 2023-02-16
 
 -   releaseCycle: "5.4"
     eol: 2023-02-16
@@ -54,42 +104,38 @@ releases:
 
 -   releaseCycle: "4.4"
     eol: 2025-06-30
-    latest: "4.4.17"
+    latest: "4.4.26"
     lts: true
-    latestReleaseDate: 2023-02-02
+    latestReleaseDate: 2023-09-20
     releaseDate: 2021-12-02
 
 -   releaseCycle: "4.3"
     eol: 2022-12-16
     latest: "4.3.23"
-    lts: false
     latestReleaseDate: 2022-12-21
     releaseDate: 2021-06-10
 
 -   releaseCycle: "4.2"
     eol: 2022-05-16
     latest: "4.2.19"
-    lts: false
     latestReleaseDate: 2022-08-11
     releaseDate: 2020-11-17
 
 -   releaseCycle: "4.1"
     eol: 2021-12-22
     latest: "4.1.12"
-    lts: false
     latestReleaseDate: 2022-08-11
     releaseDate: 2020-06-23
 
 -   releaseCycle: "4.0"
     eol: 2021-07-14
     latest: "4.0.12"
-    lts: false
     latestReleaseDate: 2021-07-06
     releaseDate: 2019-12-17
 
 ---
 
-> [Neo4j](https://neo4j.com/) is a high-performance graph database with with a friendly query
+> [Neo4j](https://neo4j.com/) is a high-performance graph database with a friendly query
 > language and ACID transactions.
 
 Neo4j has separate policies for different versions.

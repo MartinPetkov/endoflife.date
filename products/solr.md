@@ -1,6 +1,7 @@
 ---
 title: Apache Solr
 category: server-app
+tags: apache java-runtime
 iconSlug: apachesolr
 permalink: /solr
 alternate_urls:
@@ -25,9 +26,9 @@ auto:
 releases:
 -   releaseCycle: "9"
     eol: false
-    latest: "9.1.1"
+    latest: "9.4.0"
     releaseDate: 2022-05-11
-    latestReleaseDate: 2023-01-24
+    latestReleaseDate: 2023-10-14
 
 -   releaseCycle: "8"
     eol: false

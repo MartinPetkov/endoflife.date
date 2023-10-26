@@ -4,7 +4,8 @@ category: app
 permalink: /cfengine
 versionCommand: cf-agent --version
 releasePolicyLink: https://cfengine.com
-changelogTemplate: https://github.com/cfengine/core/blob/__LATEST__/ChangeLog
+changelogTemplate:
+  https://docs.cfengine.com/docs/__RELEASE_CYCLE__/guide-latest-release-whatsnew-changelog-core.html
 releaseDateColumn: true
 eolColumn: Supported
 
@@ -12,13 +13,26 @@ identifiers:
 -   repology: cfengine
 -   purl: pkg:homebrew/cfengine
 
+auto:
+-   git: https://github.com/cfengine/core.git
+
 releases:
+-   releaseCycle: "3.22"
+    releaseDate: 2023-06-16
+    eol: true
+    link:
+      https://docs.cfengine.com/docs/__RELEASE_CYCLE__/release-notes-whatsnew-changelog-core.html
+    latest: "3.22.0"
+    latestReleaseDate: 2023-06-16
+
 -   releaseCycle: "3.21"
     releaseDate: 2022-12-21
     eol: 2025-12-21
     lts: true
-    latest: "3.21.0"
-    latestReleaseDate: 2022-12-21
+    link:
+      https://docs.cfengine.com/docs/__RELEASE_CYCLE__/release-notes-whatsnew-changelog-core.html
+    latest: "3.21.3"
+    latestReleaseDate: 2023-10-06
 
 -   releaseCycle: "3.20"
     releaseDate: 2022-07-01
@@ -36,23 +50,23 @@ releases:
     releaseDate: 2021-06-24
     eol: 2024-06-24
     lts: true
-    latest: "3.18.3"
-    latestReleaseDate: 2022-11-14
+    latest: "3.18.6"
+    latestReleaseDate: 2023-10-06
 
 -   releaseCycle: "3.17"
-    releaseDate: 2020-11-18
+    releaseDate: 2020-11-19
     eol: true
     latest: "3.17.0"
-    latestReleaseDate: 2020-11-18
+    latestReleaseDate: 2020-11-19
 
 -   releaseCycle: "3.16"
-    releaseDate: 2020-06-25
+    releaseDate: 2020-06-23
     eol: true
     latest: "3.16.0"
-    latestReleaseDate: 2020-06-25
+    latestReleaseDate: 2020-06-23
 
 -   releaseCycle: "3.15"
-    releaseDate: 2019-12-18
+    releaseDate: 2019-12-19
     eol: 2022-12-31
     lts: true
     latest: "3.15.7"

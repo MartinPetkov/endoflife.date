@@ -1,6 +1,7 @@
 ---
 title: Hashicorp Vault
 category: server-app
+tags: hashicorp
 iconSlug: vault
 permalink: /hashicorp-vault
 alternate_urls:
@@ -16,23 +17,35 @@ auto:
 
 # eol(x) = release(x+3)
 releases:
+-   releaseCycle: "1.15"
+    releaseDate: 2023-09-22
+    eol: false
+    latest: "1.15.1"
+    latestReleaseDate: 2023-10-20
+
+-   releaseCycle: "1.14"
+    releaseDate: 2023-06-19
+    eol: false
+    latest: "1.14.5"
+    latestReleaseDate: 2023-10-20
+
 -   releaseCycle: "1.13"
     releaseDate: 2023-03-01
     eol: false
-    latest: "1.13.0"
-    latestReleaseDate: 2023-03-01
+    latest: "1.13.9"
+    latestReleaseDate: 2023-10-20
 
 -   releaseCycle: "1.12"
     releaseDate: 2022-10-10
-    eol: false
-    latest: "1.12.4"
-    latestReleaseDate: 2023-02-28
+    eol: 2023-09-27
+    latest: "1.12.11"
+    latestReleaseDate: 2023-09-11
 
 -   releaseCycle: "1.11"
     releaseDate: 2022-06-17
-    eol: false
-    latest: "1.11.8"
-    latestReleaseDate: 2023-02-24
+    eol: 2023-06-21
+    latest: "1.11.12"
+    latestReleaseDate: 2023-06-19
 
 -   releaseCycle: "1.10"
     releaseDate: 2022-03-21

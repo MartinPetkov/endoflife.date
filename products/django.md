@@ -1,11 +1,12 @@
 ---
 title: Django
 category: framework
+tags: python-runtime
 iconSlug: django
 permalink: /django
 versionCommand: python -c "import django; print(django.get_version())"
 releasePolicyLink: https://www.djangoproject.com/download/#supported-versions
-releaseImage: https://static.djangoproject.com/img/release-roadmap.3c7ece4f31b3.png
+releaseImage: https://static.djangoproject.com/img/release-roadmap.4cf783b31fbe.png
 changelogTemplate: https://docs.djangoproject.com/en/__RELEASE_CYCLE__/releases/__LATEST__/
 activeSupportColumn: true
 releaseDateColumn: true
@@ -19,71 +20,79 @@ auto:
 -   git: https://github.com/django/django.git
 
 releases:
+-   releaseCycle: "4.2"
+    lts: true
+    releaseDate: 2023-04-03
+    support: 2023-12-01
+    eol: 2026-04-01
+    latest: "4.2.6"
+    latestReleaseDate: 2023-10-04
+
 -   releaseCycle: "4.1"
+    releaseDate: 2022-08-03
     support: 2023-04-01
     eol: 2023-12-01
-    latest: "4.1.7"
-    latestReleaseDate: 2023-02-14
-    releaseDate: 2022-08-03
+    latest: "4.1.12"
+    latestReleaseDate: 2023-10-04
 
 -   releaseCycle: "4.0"
+    releaseDate: 2021-12-07
     support: 2022-08-01
     eol: 2023-04-01
     latest: "4.0.10"
     latestReleaseDate: 2023-02-14
-    releaseDate: 2021-12-07
 
 -   releaseCycle: "3.2"
+    releaseDate: 2021-04-06
     support: 2021-12-01
     eol: 2024-04-01
-    latest: "3.2.18"
+    latest: "3.2.22"
     lts: true
-    latestReleaseDate: 2023-02-14
-    releaseDate: 2021-04-06
+    latestReleaseDate: 2023-10-04
 
 -   releaseCycle: "3.1"
+    releaseDate: 2020-08-04
     support: 2021-04-05
     eol: 2021-12-07
     latest: "3.1.14"
     latestReleaseDate: 2021-12-07
-    releaseDate: 2020-08-04
 
 -   releaseCycle: "3.0"
+    releaseDate: 2019-12-02
     support: 2020-08-01
     eol: 2021-04-06
     latest: "3.0.14"
     latestReleaseDate: 2021-04-06
-    releaseDate: 2019-12-02
 
 -   releaseCycle: "2.2"
     lts: true
+    releaseDate: 2019-04-01
     support: 2019-12-01
     eol: 2022-04-01
     latest: "2.2.28"
     latestReleaseDate: 2022-04-11
-    releaseDate: 2019-04-01
 
 -   releaseCycle: "2.1"
+    releaseDate: 2018-08-01
     support: 2019-04-01
     eol: 2019-12-02
     latest: "2.1.15"
     latestReleaseDate: 2019-12-02
-    releaseDate: 2018-08-01
 
 -   releaseCycle: "2.0"
+    releaseDate: 2017-12-02
     support: 2018-08-01
     eol: 2019-04-01
     latest: "2.0.13"
     latestReleaseDate: 2019-02-12
-    releaseDate: 2017-12-02
 
 -   releaseCycle: "1.11"
     lts: true
+    releaseDate: 2017-04-04
     support: 2017-12-02
     eol: 2020-04-01
     latest: "1.11.29"
     latestReleaseDate: 2020-03-04
-    releaseDate: 2017-04-04
 
 ---
 
@@ -92,14 +101,14 @@ releases:
 
 | Django Release | Supported Python Versions |
 |----------------|---------------------------|
-| 4.0            | 3.8 ≥ 3.10                |
+| 4.2            | 3.8 ≥ 3.11                |
 | 3.2            | 3.6 ≥ 3.10                |
 | 2.2            | 3.5 ≥ 3.9                 |
 | 2.0            | 3.4 ≥ 3.7                 |
 | 1.11.x         | 2.7 , 3.4 ≥ 3.7           |
 
 Not all releases in a series will support all Python versions, the matrix above is for the latest
-patch release. [For more up-to-date info](https://docs.djangoproject.com/en/4.0/faq/install/#what-python-version-can-i-use-with-django).
+patch release. [For more up-to-date info](https://docs.djangoproject.com/en/4.2/faq/install/#what-python-version-can-i-use-with-django).
 
 **Feature releases** (A.B, A.B+1, etc.) will happen roughly every eight months. These releases will
 contain new features, improvements to existing features, and such. These can include documented

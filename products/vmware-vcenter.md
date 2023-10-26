@@ -1,6 +1,7 @@
 ---
 title: VMware vCenter Server
 category: app
+tags: vmware
 iconSlug: vmware
 permalink: /vcenter
 alternate_urls:
@@ -19,17 +20,17 @@ releases:
     releaseDate: 2022-10-11
     eol: 2027-10-11
     technicalGuidance: 2029-10-11
-    latest: "8.0b"
-    latestReleaseDate: 2023-02-14
-    link: "https://docs.vmware.com/en/VMware-vSphere/8.0/rn/vsphere-vcenter-server-80b-release-notes/index.html"
+    latest: "8.0 U2"
+    latestReleaseDate: 2023-09-21
+    link: "https://docs.vmware.com/en/VMware-vSphere/8.0/rn/vsphere-vcenter-server-802-release-notes/index.html"
 
 -   releaseCycle: "7.0"
     releaseDate: 2020-04-02
     eol: 2025-04-02
     technicalGuidance: 2027-04-02
-    latest: "7.0 U3k"
-    latestReleaseDate: 2023-02-22
-    link: "https://docs.vmware.com/en/VMware-vSphere/7.0/rn/vsphere-vcenter-server-70u3k-release-notes.html"
+    latest: "7.0 U3n"
+    latestReleaseDate: 2023-07-06
+    link: "https://docs.vmware.com/en/VMware-vSphere/7.0/rn/vsphere-vcenter-server-70u3n-release-notes/index.html"
 
 -   releaseCycle: "6.7"
     releaseDate: 2018-04-17
@@ -109,5 +110,5 @@ support, server/client/guest OS updates, new security patches or bug fixes unles
 {% include table.html
 labels="Release,Technical Guidance Ends"
 fields="releaseCycle,technicalGuidance"
-types="string,date"
+types="raw,end-date"
 rows=page.releases %}

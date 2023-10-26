@@ -1,6 +1,7 @@
 ---
 title: Logstash
 category: server-app
+tags: elastic
 iconSlug: logstash
 permalink: /logstash
 releasePolicyLink: https://www.elastic.co/support_policy
@@ -13,17 +14,15 @@ auto:
 
 releases:
 -   releaseCycle: "8"
-    # the longest between this date and 6 months after the 9.0.0
-    eol: 2023-10-26
-    latest: "8.6.2"
-    latestReleaseDate: 2023-02-16
+    eol: 2024-08-10 # later of 2024-08-10 or 6 months after the release date of 9.0
+    latest: "8.10.4"
+    latestReleaseDate: 2023-10-17
     releaseDate: 2022-02-10
 
 -   releaseCycle: "7"
-    # Maintained until 9.0.0
-    eol: 2023-08-01
-    latest: "7.17.9"
-    latestReleaseDate: 2023-02-02
+    eol: false # later of 2023-08-01 or the release date of 9.0
+    latest: "7.17.14"
+    latestReleaseDate: 2023-10-10
     releaseDate: 2019-04-05
 
 -   releaseCycle: "6"

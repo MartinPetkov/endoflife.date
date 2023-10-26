@@ -1,10 +1,11 @@
 ---
 title: Keycloak
 category: server-app
+tags: java-runtime red-hat
 # https://github.com/simple-icons/simple-icons/issues/8125
 permalink: /keycloak
 releasePolicyLink: https://github.com/keycloak/keycloak/security/policy#supported-versions
-changelogTemplate: "https://github.com/keycloak/keycloak/releases/tag/__LATEST__"
+changelogTemplate: "https://www.keycloak.org/docs/latest/release_notes/index.html#keycloak-{{'__LATEST__'|replace:'.','-'}}"
 activeSupportColumn: false
 releaseColumn: true
 releaseDateColumn: true
@@ -15,11 +16,23 @@ auto:
 
 # eol(x) = release(x+1)
 releases:
+-   releaseCycle: "22.0"
+    releaseDate: 2023-07-11
+    eol: false
+    latest: "22.0.5"
+    latestReleaseDate: 2023-10-24
+
+-   releaseCycle: "21.1"
+    releaseDate: 2023-04-19
+    eol: 2023-07-11
+    latest: "21.1.2"
+    latestReleaseDate: 2023-06-28
+
 -   releaseCycle: "21.0"
     releaseDate: 2023-02-23
-    eol: false
-    latest: "21.0.1"
-    latestReleaseDate: 2023-03-01
+    eol: 2023-04-19
+    latest: "21.0.2"
+    latestReleaseDate: 2023-03-30
 
 -   releaseCycle: "20.0"
     releaseDate: 2022-11-01
@@ -109,5 +122,5 @@ Depending on the severity of a vulnerability, the issue may be fixed in the curr
 lower severity vulnerabilities or hardening, in the following release.
 
 A commercial offering with long term support of specific versions of Keycloak is provided by Red Hat
-with [Red Hat Single Sign-On (RH-SSO)](https://access.redhat.com/products/red-hat-single-sign-on).
+with [Red Hat Single Sign-On (RH-SSO)](https://access.redhat.com/products/red-hat-single-sign-on/).
 It should be noted that RH-SSO must be running [under a supported configuration](https://access.redhat.com/articles/2342861).

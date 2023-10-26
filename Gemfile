@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3.1"
+gem "jekyll", "~> 4.3.2"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
@@ -8,9 +8,9 @@ gem "jekyll", "~> 4.3.1"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.17"
+  gem 'jekyll-feed', '~> 0.17'
   gem 'jekyll-timeago'
-  gem "just-the-docs"
+  gem 'just-the-docs', '~> 0.6.2'
   gem 'jekyll-seo-tag'
   gem 'jekyll-last-modified-at'
   gem 'jemoji'
@@ -24,4 +24,7 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 gem "webrick", "~> 1.8"
 
-gem 'icalendar', '~> 2.7'
+gem 'icalendar', '~> 2.9'
+
+# Used in product-data-validator to check URLs
+gem "open-uri", "~> 0.3"

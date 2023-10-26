@@ -5,27 +5,67 @@ iconSlug: mattermost
 permalink: /mattermost
 versionCommand: sudo -u mattermost /opt/mattermost/bin/mattermost version
 releasePolicyLink: https://docs.mattermost.com/upgrade/release-lifecycle.html
+releaseImage: https://docs.mattermost.com/_images/ESR_graphic.png
 changelogTemplate: https://docs.mattermost.com/upgrade/version-archive.html
+LTSLabel: "<abbr title='Extended Support Release'>ESR</abbr>"
 activeSupportColumn: false
+eolWarnThreshold: 30
 releaseDateColumn: true
 
 auto:
 -   git: https://github.com/mattermost/mattermost-server.git
 
-# Last 3 releases are supported.
+# EOL date can be found on https://docs.mattermost.com/upgrade/release-lifecycle.html
 releases:
+-   releaseCycle: "9.1"
+    releaseDate: 2023-10-06
+    eol: 2024-01-15
+    latest: '9.1.0'
+    latestReleaseDate: 2023-10-06
+
+-   releaseCycle: "9.0"
+    releaseDate: 2023-09-08
+    eol: 2023-12-15
+    latest: '9.0.1'
+    latestReleaseDate: 2023-09-15
+
+-   releaseCycle: "8.1"
+    lts: true
+    releaseDate: 2023-08-10
+    eol: 2024-05-15
+    latest: '8.1.3'
+    latestReleaseDate: 2023-10-03
+
+-   releaseCycle: "8.0"
+    releaseDate: 2023-07-09
+    eol: 2023-10-15
+    latest: '8.0.4'
+    latestReleaseDate: 2023-10-03
+
+-   releaseCycle: "7.10"
+    releaseDate: 2023-04-12
+    eol: 2023-07-15
+    latest: '7.10.5'
+    latestReleaseDate: 2023-07-24
+
+-   releaseCycle: "7.9"
+    releaseDate: 2023-03-14
+    eol: 2023-06-15
+    latest: '7.9.6'
+    latestReleaseDate: 2023-07-05
+
 -   releaseCycle: "7.8"
     lts: true
     releaseDate: 2023-02-14
     eol: 2023-11-15
-    latestReleaseDate: 2023-03-01
-    latest: '7.8.1'
+    latestReleaseDate: 2023-10-02
+    latest: '7.8.12'
 
 -   releaseCycle: "7.7"
     releaseDate: 2023-01-13
     eol: 2023-04-15
-    latestReleaseDate: 2023-03-01
-    latest: '7.7.2'
+    latestReleaseDate: 2023-04-05
+    latest: '7.7.4'
 
 -   releaseCycle: "7.5"
     releaseDate: 2022-11-09
@@ -55,8 +95,8 @@ releases:
     lts: true
     releaseDate: 2022-07-13
     eol: 2023-04-15
-    latest: '7.1.6'
-    latestReleaseDate: 2023-03-01
+    latest: '7.1.9'
+    latestReleaseDate: 2023-04-27
 
 -   releaseCycle: "7.0"
     releaseDate: 2022-06-13
@@ -120,4 +160,9 @@ releases:
 > companies.
 
 Mattermost backports high-severity or high-impact security fixes to the previous three monthly
-releases and to LTS releases that are not EOL yet.
+releases and to supported [extended support releases (ESR)](https://docs.mattermost.com/upgrade/extended-support-release.html).
+A new ESR release is made when a significant number of new features and improvements have been added
+to the product, and have had sufficient time to stabilize. A new ESR is released twice a year in
+January and July. ESR releases are supported for nine months.
+
+Announcements are published on the [Mattermost Announcements Mailing List](https://eepurl.com/dCKn2P).

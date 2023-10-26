@@ -1,6 +1,7 @@
 ---
 title: SonarQube
 category: server-app
+tags: java-runtime
 iconSlug: sonarqube
 permalink: /sonar
 alternate_urls:
@@ -17,13 +18,21 @@ auto:
     regex: ^(?<major>\d+)\.(?<minor>\d+)(\.(?<patch>\d+))?(\.(?<build>\d+))?$
 
 releases:
--   releaseCycle: "9"
-    releaseDate: 2021-07-05
+-   releaseCycle: "10"
+    releaseDate: 2023-03-30
     support: true
     eol: false
+    latest: "10.2.1"
+    latestReleaseDate: 2023-09-25
+    link: https://www.sonarsource.com/products/sonarqube/whats-new/sonarqube-10-0/
+
+-   releaseCycle: "9"
+    releaseDate: 2021-07-05
+    support: 2023-03-30
+    eol: false
     lts: 2023-02-07
-    latest: "9.9.0"
-    latestReleaseDate: 2023-02-03
+    latest: "9.9.2"
+    latestReleaseDate: 2023-08-25
     link: https://www.sonarsource.com/products/sonarqube/downloads/lts/9-9-lts/
 
 -   releaseCycle: "8"

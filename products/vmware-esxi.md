@@ -1,6 +1,7 @@
 ---
 title: VMware ESXi
 category: os
+tags: vmware
 iconSlug: vmware
 permalink: /esxi
 alternate_urls:
@@ -19,18 +20,18 @@ releases:
 -   releaseCycle: "8.0"
     eol: 2027-10-11
     technicalGuidance: 2029-10-11
-    latest: "8.0b"
-    link: "https://docs.vmware.com/en/VMware-vSphere/8.0/rn/vsphere-esxi-80b-release-notes/index.html"
+    latest: "8.0 Update 2"
+    link: "https://docs.vmware.com/en/VMware-vSphere/8.0/rn/vsphere-esxi-802-release-notes/index.html"
     releaseDate: 2022-10-11
-    latestReleaseDate: 2023-02-14
+    latestReleaseDate: 2023-09-21
 
 -   releaseCycle: "7.0"
     eol: 2025-04-02
     technicalGuidance: 2027-04-02
-    latest: "7.0 Update 3j"
-    link: "https://docs.vmware.com/en/VMware-vSphere/7.0/rn/vsphere-esxi-70u3j-release-notes.html"
+    latest: "7.0 Update 3o"
+    link: "https://docs.vmware.com/en/VMware-vSphere/7.0/rn/vsphere-esxi-70u3o-release-notes/index.html"
     releaseDate: 2020-04-02
-    latestReleaseDate: 2023-01-31
+    latestReleaseDate: 2023-09-28
 
 -   releaseCycle: "6.7"
     eol: 2022-10-15
@@ -87,5 +88,5 @@ support, server/client/guest OS updates, new security patches or bug fixes unles
 {% include table.html
 labels="Release,Technical Guidance Ends"
 fields="releaseCycle,technicalGuidance"
-types="string,date"
+types="raw,end-date"
 rows=page.releases %}

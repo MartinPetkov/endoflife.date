@@ -1,49 +1,63 @@
 ---
 title: Apple iPadOS
 category: os
+tags: apple
 iconSlug: apple
 permalink: /ipados
 releasePolicyLink: https://en.wikipedia.org/wiki/IOS_version_history#Overview
-discontinuedColumn: false
-activeSupportColumn: true
 releaseColumn: true
 releaseDateColumn: true
+activeSupportColumn: true
+discontinuedColumn: false
 
 auto:
 -   custom: true
 
 releases:
--   releaseCycle: "16"
-    releaseDate: 2022-10-24
+-   releaseCycle: "17"
+    releaseDate: 2023-09-18
     support: true
     eol: false
-    latestReleaseDate: 2023-02-13
-    latest: '16.3.1'
-    link: https://developer.apple.com/documentation/ios-ipados-release-notes/ipados-16-release-notes
+    latest: '17.0.3'
+    latestReleaseDate: 2023-10-04
+    link:
+      https://developer.apple.com/documentation/ios-ipados-release-notes/ios-ipados-17-release-notes
+
+-   releaseCycle: "16"
+    releaseDate: 2022-10-24
+    support: 2023-09-18
+    eol: false
+    latest: '16.7.1'
+    latestReleaseDate: 2023-10-10
+    link:
+      https://developer.apple.com/documentation/ios-ipados-release-notes/ipados-16-release-notes
 
 -   releaseCycle: "15"
     releaseDate: 2021-09-20
     support: 2022-10-24
     eol: false
-    latestReleaseDate: 2023-01-23
-    latest: '15.7.3'
-    link: https://developer.apple.com/documentation/ios-ipados-release-notes/ios-ipados-15-release-notes
+    latest: '15.7.9'
+    latestReleaseDate: 2023-09-11
+    link:
+      https://developer.apple.com/documentation/ios-ipados-release-notes/ios-ipados-15-release-notes
 
 -   releaseCycle: "14"
     releaseDate: 2020-09-16
     support: 2021-09-20
     eol: 2021-10-01
-    latestReleaseDate: 2021-10-26
     latest: '14.8.1'
-    link: https://developer.apple.com/documentation/ios-ipados-release-notes/ios-ipados-14-release-notes
+    latestReleaseDate: 2021-10-26
+    link:
+      https://developer.apple.com/documentation/ios-ipados-release-notes/ios-ipados-14-release-notes
 
 -   releaseCycle: "13"
     releaseDate: 2019-09-24
     support: 2020-09-16
     eol: 2020-09-16
-    latestReleaseDate: 2020-07-15
     latest: '13.6'
-    link: https://developer.apple.com/documentation/ios-ipados-release-notes/ios-ipados-13_1-release-notes
+    latestReleaseDate: 2020-07-15
+    link:
+      https://developer.apple.com/documentation/ios-ipados-release-notes/ios-ipados-13_1-release-notes
 
 ---
 

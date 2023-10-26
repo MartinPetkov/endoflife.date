@@ -1,6 +1,7 @@
 ---
 title: Hashicorp Consul
 category: server-app
+tags: hashicorp
 iconSlug: consul
 permalink: /consul
 versionCommand: consul --version
@@ -21,23 +22,29 @@ identifiers:
 
 # eol(x) = releaseDate(x+3)
 releases:
+-   releaseCycle: "1.16"
+    releaseDate: 2023-06-26
+    eol: false
+    latestReleaseDate: 2023-09-19
+    latest: '1.16.2'
+
 -   releaseCycle: "1.15"
     releaseDate: 2023-02-23
     eol: false
-    latestReleaseDate: 2023-02-23
-    latest: '1.15.0'
+    latestReleaseDate: 2023-09-19
+    latest: '1.15.6'
 
 -   releaseCycle: "1.14"
     eol: false
     releaseDate: 2022-11-15
-    latestReleaseDate: 2023-01-26
-    latest: '1.14.4'
+    latestReleaseDate: 2023-09-19
+    latest: '1.14.10'
 
 -   releaseCycle: "1.13"
-    eol: false
+    eol: 2023-06-26
     releaseDate: 2022-08-09
-    latestReleaseDate: 2023-01-26
-    latest: '1.13.6'
+    latestReleaseDate: 2023-06-23
+    latest: '1.13.9'
 
 -   releaseCycle: "1.12"
     eol: 2023-02-23
@@ -58,16 +65,28 @@ releases:
     releaseDate: 2021-06-22
 
 -   releaseCycle: "1.9"
-    eol: true
+    eol: 2022-04-19
     latest: "1.9.17"
     latestReleaseDate: 2022-04-14
     releaseDate: 2020-11-24
 
 -   releaseCycle: "1.8"
-    eol: true
+    eol: 2021-12-14
     latest: "1.8.19"
     latestReleaseDate: 2021-12-15
     releaseDate: 2020-06-18
+
+-   releaseCycle: "1.7"
+    eol: 2021-06-22
+    latest: "1.7.14"
+    latestReleaseDate: 2021-04-15
+    releaseDate: 2020-02-11
+
+-   releaseCycle: "1.6"
+    eol: 2020-11-24
+    latest: "1.6.10"
+    latestReleaseDate: 2020-11-19
+    releaseDate: 2019-08-23
 
 ---
 

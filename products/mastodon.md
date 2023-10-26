@@ -1,6 +1,7 @@
 ---
 title: Mastodon
 category: server-app
+tags: javascript-runtime ruby-runtime
 iconSlug: mastodon
 permalink: /mastodon
 releasePolicyLink: https://github.com/mastodon/mastodon/security/policy
@@ -15,23 +16,29 @@ auto:
 # EOL dates are either false, if no information could be found, or the date found in
 # https://github.com/mastodon/mastodon/commits/main/SECURITY.md history.
 releases:
+-   releaseCycle: "4.2"
+    releaseDate: 2023-09-21
+    eol: false
+    latest: "4.2.1"
+    latestReleaseDate: 2023-10-10
+
 -   releaseCycle: "4.1"
     releaseDate: 2023-02-10
     eol: false
-    latest: "4.1.0"
-    latestReleaseDate: 2023-02-10
+    latest: "4.1.10"
+    latestReleaseDate: 2023-10-10
 
 -   releaseCycle: "4.0"
     releaseDate: 2022-11-14
-    eol: false
-    latest: "4.0.2"
-    latestReleaseDate: 2022-11-15
+    eol: 2023-10-31
+    latest: "4.0.12"
+    latestReleaseDate: 2023-10-10
 
 -   releaseCycle: "3.5"
     releaseDate: 2022-03-30
-    eol: false
-    latest: "3.5.6"
-    latestReleaseDate: 2023-02-10
+    eol: 2023-12-31
+    latest: "3.5.15"
+    latestReleaseDate: 2023-10-10
 
 -   releaseCycle: "3.4"
     releaseDate: 2021-05-16
